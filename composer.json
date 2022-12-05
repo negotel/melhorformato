@@ -1,0 +1,30 @@
+{
+    "name": "edsonrcoosta/elapp",
+    "description": "Controle de Frota Veicular",
+    "minimum-stability": "beta",
+    "authors": [{
+        "name": "Edson Costa",
+        "email": "edsonrcoosta@gmail.com",
+        "homepage": "http://www.edsonrcoosta.com",
+        "role": "Developer"
+    }],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Boot/Settings.php",
+            "source/Boot/Helpers.php"
+        ]
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-pdo": "^7.1",
+        "coffeecode/router": "^1.0",
+        "league/plates": "v4.0.0-alpha",
+        "phpoffice/phpspreadsheet": "^1.23"
+    }
+}
